@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ricartes Digital — Mentorias, Design Gráfico, Portfólio e Criatividade. Angola." />
+  <meta property="og:title" content="Ricartes Digital" />
+  <meta property="og:description" content="Ecossistema criativo para acelerar a sua jornada profissional." />
+  <title>Ricartes Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ CURSOR ══════════════════════════════════════ -->
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <!-- ══ NAVIGATION ══════════════════════════════════ -->
+  <nav id="nav">
+    <a href="#home" class="nav-brand" data-page="home">
+      Ricartes<span>.</span>Digital
+    </a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-list">
+        <li>
+          <a href="#home" class="nav-link" data-page="home">Comece Aqui</a>
+        </li>
+        <li class="nav-has-sub">
+          <a href="#mentorias" class="nav-link" data-page="mentorias">
+            Mentorias <span class="nav-chevron">▾</span>
+          </a>
+          <ul class="nav-sub">
+            <li><a href="#zero-digital" class="nav-link nav-sub-link" data-page="zero-digital">Do Zero ao Digital</a></li>
+            <li><a href="#design-start" class="nav-link nav-sub-link" data-page="design-start">Design Start</a></li>
+            <li><a href="#programacao" class="nav-link nav-sub-link" data-page="programacao">Programação</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#portfolio" class="nav-link" data-page="portfolio">Portfólio</a>
+        </li>
+        <li>
+          <a href="#creative" class="nav-link" data-page="creative">Ricartes Creative</a>
+        </li>
+      </ul>
+      <a href="https://wa.me/244931074115" class="nav-cta" target="_blank" rel="noopener">
+        Fale Comigo
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: COMECE AQUI (#home)
+  ══════════════════════════════════════════════════ -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+        <div class="hero-blob blob-3"></div>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow anim-up d1">Bem-vindo à</p>
+        <h1 class="hero-title anim-up d2">
+          Ricartes<br>
+          <em class="italic">Digital</em>
+        </h1>
+        <p class="hero-sub anim-up d3">
+          Um ecossistema criado para acelerar a sua jornada profissional
+          com direção, estratégia e conhecimento aplicado ao mercado.
+          Aqui você encontra caminhos práticos para crescer.
+        </p>
+        <div class="hero-actions anim-up d4">
+          <a href="#mentorias" class="btn-primary" data-page="mentorias">
+            Ver Mentorias <span class="btn-arrow">→</span>
+          </a>
+          <a href="#portfolio" class="btn-ghost" data-page="portfolio">Ver Portfólio</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-dot"></div>
+        <span>Rolar</span>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker-track" id="ticker-home">
+        <span class="tick">Mentorias Estratégicas</span>
+        <span class="tick">Design Gráfico</span>
+        <span class="tick">Mundo Digital</span>
+        <span class="tick">Ricartes Creative</span>
+        <span class="tick">Crescimento Profissional</span>
+        <span class="tick">Angola</span>
+        <span class="tick">Criatividade</span>
+        <span class="tick">Portfólio</span>
+      </div>
+    </div>
+
+    <!-- O que você encontra -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">O que você vai encontrar</p>
+          <h2 class="section-title">Tudo que precisa para <em>crescer</em></h2>
+        </div>
+
+        <div class="cards-grid">
+          <div class="feature-card reveal d1" data-page="mentorias">
+            <div class="fc-icon" style="background:var(--yellow)">◈</div>
+            <h3 class="fc-title">Mentorias Estratégicas</h3>
+            <p class="fc-desc">Programas pensados para dar clareza, posicionamento e mentalidade para quem quer construir uma presença digital forte.</p>
+            <a href="#mentorias" class="fc-link" data-page="mentorias">Conhecer →</a>
+          </div>
+          <div class="feature-card reveal d2" data-page="design-start">
+            <div class="fc-icon" style="background:var(--pink)">◲</div>
+            <h3 class="fc-title">Cursos Práticos</h3>
+            <p class="fc-desc">Aprenda os fundamentos, domine ferramentas e desenvolva projetos reais que preparem você para o mercado.</p>
+            <a href="#design-start" class="fc-link" data-page="design-start">Conhecer →</a>
+          </div>
+          <div class="feature-card reveal d3" data-page="portfolio">
+            <div class="fc-icon" style="background:var(--cyan)">◎</div>
+            <h3 class="fc-title">Portfólio & Experiências</h3>
+            <p class="fc-desc">Conheça projetos, resultados e a trajetória por trás do trabalho — aprender com exemplos reais faz toda a diferença.</p>
+            <a href="#portfolio" class="fc-link" data-page="portfolio">Ver trabalhos →</a>
+          </div>
+          <div class="feature-card reveal d4" data-page="creative">
+            <div class="fc-icon" style="background:var(--orange)">▣</div>
+            <h3 class="fc-title">Ricartes Creative</h3>
+            <p class="fc-desc">Soluções criativas e estratégicas para marcas que desejam comunicar melhor e crescer com consistência.</p>
+            <a href="#creative" class="fc-link" data-page="creative">Conhecer →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Para quem é -->
+    <section class="section alt-bg">
+      <div class="container two-col">
+        <div class="col-text reveal">
+          <p class="eyebrow">Para quem é</p>
+          <h2 class="section-title">Este espaço é <em>para você</em></h2>
+          <ul class="check-list">
+            <li>Quer começar do zero com mais segurança</li>
+            <li>Está no início da carreira criativa</li>
+            <li>Deseja viver do seu talento</li>
+            <li>Quer posicionar sua marca no digital</li>
+            <li>Busca crescimento profissional com estratégia</li>
+          </ul>
+          <blockquote class="quote">
+            "O melhor momento para começar foi ontem.<br>O segundo melhor é <strong>agora.</strong>"
+          </blockquote>
+        </div>
+        <div class="col-cta reveal d2">
+          <div class="cta-box">
+            <p class="cta-label">Nossa missão</p>
+            <h3 class="cta-title">Do amador ao profissional</h3>
+            <ul class="cta-list">
+              <li>Da dúvida para a ação</li>
+              <li>Do amador para o profissional</li>
+              <li>Do sonho para a execução</li>
+            </ul>
+            <a href="#mentorias" class="btn-primary w-full" data-page="mentorias">
+              Começar minha jornada <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-n" data-n="80" data-sfx="+">0</span><span class="stat-l">Projetos</span></div>
+        <div class="stat reveal d1"><span class="stat-n" data-n="6" data-sfx=" anos">0</span><span class="stat-l">Experiência</span></div>
+        <div class="stat reveal d2"><span class="stat-n" data-n="40" data-sfx="+">0</span><span class="stat-l">Clientes</span></div>
+        <div class="stat reveal d3"><span class="stat-n" data-n="3" data-sfx="">0</span><span class="stat-l">Mentorias ativas</span></div>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: MENTORIAS (#mentorias)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-mentorias">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--purple);--c2:var(--pink)"></div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Mentorias</p>
+        <h1 class="ph-title anim-up d2">Escolha o seu <em>caminho</em></h1>
+        <p class="ph-sub anim-up d3">Programas criados para levar você do zero ao mercado com clareza e estratégia.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="mentoria-cards">
+
+          <div class="mcard reveal" id="mcard-zero">
+            <div class="mcard-accent" style="background:var(--yellow)"></div>
+            <div class="mcard-body">
+              <p class="mcard-tag">Mentoria</p>
+              <h2 class="mcard-title">Do Zero ao Digital</h2>
+              <p class="mcard-desc">Clareza, estratégia e ação para quem quer entrar no mundo digital com segurança. Para quem está perdido, confuso ou com medo de começar.</p>
+              <ul class="mcard-list">
+                <li>Como funciona o mercado digital</li>
+                <li>Como encontrar seu caminho</li>
+                <li>Como se posicionar online</li>
+                <li>Mentalidade profissional</li>
+              </ul>
+              <div class="mcard-actions">
+                <a href="#zero-digital" class="btn-primary" data-page="zero-digital">Ver detalhes →</a>
+                <a href="https://forms.gle/G52UAN4NPpSq1pLi6" class="btn-ghost" target="_blank">Inscrever-me</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mcard reveal d1" id="mcard-design">
+            <div class="mcard-accent" style="background:var(--pink)"></div>
+            <div class="mcard-body">
+              <p class="mcard-tag">Curso</p>
+              <h2 class="mcard-title">Design Start</h2>
+              <p class="mcard-desc">Do zero à criação. Aprenda design gráfico de forma simples, prática e aplicada. Sem precisar saber nada antes de começar.</p>
+              <ul class="mcard-list">
+                <li>5 módulos completos</li>
+                <li>Canva, Photoshop, Illustrator</li>
+                <li>Identidade visual na prática</li>
+                <li>Portfólio + certificado</li>
+              </ul>
+              <div class="mcard-actions">
+                <a href="#design-start" class="btn-primary" data-page="design-start">Ver detalhes →</a>
+                <a href="https://forms.gle/ficpiZRezBxrX1xs6" class="btn-ghost" target="_blank">Inscrever-me</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mcard reveal d2" id="mcard-prog">
+            <div class="mcard-accent" style="background:var(--cyan)"></div>
+            <div class="mcard-body">
+              <p class="mcard-tag">Curso</p>
+              <h2 class="mcard-title">Programação</h2>
+              <p class="mcard-desc">Cronograma estruturado com vídeos, PDFs e exercícios práticos. Avaliações, feedback personalizado e certificado ao final.</p>
+              <ul class="mcard-list">
+                <li>Vídeo aulas práticas</li>
+                <li>PDF resumo por aula</li>
+                <li>Exercícios aplicados</li>
+                <li>Certificado de conclusão</li>
+              </ul>
+              <div class="mcard-actions">
+                <a href="#programacao" class="btn-primary" data-page="programacao">Ver detalhes →</a>
+                <a href="https://wa.me/244931074115" class="btn-ghost" target="_blank">Entrar em contacto</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-mentorias -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: DO ZERO AO DIGITAL (#zero-digital)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-zero-digital">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--yellow);--c2:var(--orange)"></div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Mentoria</p>
+        <h1 class="ph-title anim-up d2">Do Zero ao <em>Digital</em></h1>
+        <p class="ph-sub anim-up d3">Clareza, estratégia e ação para quem quer entrar no mundo digital com segurança.</p>
+        <a href="https://forms.gle/G52UAN4NPpSq1pLi6" class="btn-primary anim-up d4" target="_blank">
+          Quero começar minha jornada →
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="col-text reveal">
+          <p class="eyebrow">O que é</p>
+          <h2 class="section-title">Criado para quem tem <em>medo de começar</em></h2>
+          <p class="body-text">A Mentoria Do Zero ao Digital foi criada para quem está perdido, confuso ou com medo de começar. Tudo explicado de forma simples, direta e prática.</p>
+
+          <h3 class="sub-title">O que você vai aprender</h3>
+          <ul class="check-list">
+            <li>Fundamentos do mundo digital</li>
+            <li>Posicionamento pessoal e profissional</li>
+            <li>Mentalidade, foco e disciplina</li>
+            <li>Como organizar suas ideias e objetivos</li>
+            <li>Primeiros passos para gerar oportunidades no digital</li>
+          </ul>
+
+          <h3 class="sub-title">Para quem é esta mentoria?</h3>
+          <ul class="check-list">
+            <li>Quem quer começar do zero</li>
+            <li>Quem tem medo de errar</li>
+            <li>Quem já tentou e desistiu</li>
+            <li>Quem quer direção clara</li>
+          </ul>
+        </div>
+
+        <div class="col-cta reveal d2">
+          <div class="results-box">
+            <p class="eyebrow">Resultado esperado</p>
+            <h3 class="results-title">Ao final você terá:</h3>
+            <div class="result-item">
+              <div class="result-icon" style="background:var(--yellow)">✦</div>
+              <p>Clareza sobre o seu caminho digital</p>
+            </div>
+            <div class="result-item">
+              <div class="result-icon" style="background:var(--orange)">✦</div>
+              <p>Confiança para agir</p>
+            </div>
+            <div class="result-item">
+              <div class="result-icon" style="background:var(--pink)">✦</div>
+              <p>Visão profissional do mercado</p>
+            </div>
+            <a href="https://forms.gle/G52UAN4NPpSq1pLi6" class="btn-primary w-full mt" target="_blank">
+              Quero começar agora →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-zero-digital -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: DESIGN START (#design-start)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-design-start">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--pink);--c2:var(--purple)"></div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Curso</p>
+        <h1 class="ph-title anim-up d2">Design <em>Start</em></h1>
+        <p class="ph-sub anim-up d3">Do zero à criação. Aprenda design gráfico de forma simples, prática e aplicada ao mercado.</p>
+        <a href="https://forms.gle/ficpiZRezBxrX1xs6" class="btn-primary anim-up d4" target="_blank">
+          Quero começar no Design →
+        </a>
+      </div>
+    </section>
+
+    <!-- O que é -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Metodologia</p>
+          <h2 class="section-title">Aprendizado <em>real</em>, sem teoria desnecessária</h2>
+        </div>
+        <div class="method-pills reveal">
+          <span class="pill" style="--bg:var(--yellow)">Aulas diretas e objetivas</span>
+          <span class="pill" style="--bg:var(--pink)">Exercícios práticos</span>
+          <span class="pill" style="--bg:var(--cyan)">Exemplos reais</span>
+          <span class="pill" style="--bg:var(--orange)">Aplicação imediata</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Conteúdo</p>
+          <h2 class="section-title">Os 5 <em>módulos</em> do curso</h2>
+        </div>
+        <div class="modules-grid">
+
+          <div class="module-card reveal">
+            <div class="mod-num" style="background:var(--yellow);color:var(--black)">01</div>
+            <div class="mod-body">
+              <h3 class="mod-title">Fundamentos do Design</h3>
+              <ul class="mod-list">
+                <li>Aula 01 – O que é Design Gráfico</li>
+                <li>Aula 02 – Princípios do Design</li>
+                <li>Aula 03 – Elementos Visuais</li>
+              </ul>
+              <p class="mod-task">✦ Tarefa: Análise de um design</p>
+            </div>
+          </div>
+
+          <div class="module-card reveal d1">
+            <div class="mod-num" style="background:var(--pink);color:var(--white)">02</div>
+            <div class="mod-body">
+              <h3 class="mod-title">Ferramentas</h3>
+              <ul class="mod-list">
+                <li>Aula 04 – Canva para iniciantes</li>
+                <li>Aula 05 – Photoshop (Introdução)</li>
+                <li>Aula 06 – Illustrator (Introdução)</li>
+              </ul>
+              <p class="mod-task">✦ Tarefa: Criar e enviar uma arte</p>
+            </div>
+          </div>
+
+          <div class="module-card reveal d2">
+            <div class="mod-num" style="background:var(--cyan);color:var(--black)">03</div>
+            <div class="mod-body">
+              <h3 class="mod-title">Identidade Visual</h3>
+              <ul class="mod-list">
+                <li>Aula 07 – Marca e Identidade</li>
+                <li>Aula 08 – Logotipo e cores</li>
+                <li>Aula 09 – Tipografia</li>
+              </ul>
+              <p class="mod-task">✦ Tarefa: Mini identidade visual</p>
+            </div>
+          </div>
+
+          <div class="module-card reveal d1">
+            <div class="mod-num" style="background:var(--orange);color:var(--white)">04</div>
+            <div class="mod-body">
+              <h3 class="mod-title">Design para Redes Sociais</h3>
+              <ul class="mod-list">
+                <li>Aula 10 – Formatos e boas práticas</li>
+                <li>Aula 11 – Feed, Stories e Reels</li>
+                <li>Aula 12 – Conteúdo estratégico</li>
+              </ul>
+              <p class="mod-task">✦ Tarefa: 3 posts para Instagram</p>
+            </div>
+          </div>
+
+          <div class="module-card reveal d2">
+            <div class="mod-num" style="background:var(--purple);color:var(--white)">05</div>
+            <div class="mod-body">
+              <h3 class="mod-title">Portfólio & Mercado</h3>
+              <ul class="mod-list">
+                <li>Aula 13 – Montar portfólio</li>
+                <li>Aula 14 – Como cobrar</li>
+                <li>Aula 15 – Mercado Angolano</li>
+              </ul>
+              <p class="mod-task">✦ Tarefa Final: Portfólio + Certificado</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Para quem + resultado -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="col-text reveal">
+          <p class="eyebrow">Para quem é</p>
+          <h2 class="section-title">Feito para <em>iniciantes</em></h2>
+          <ul class="check-list">
+            <li>Iniciantes em design</li>
+            <li>Criadores de conteúdo</li>
+            <li>Social media</li>
+            <li>Empreendedores</li>
+            <li>Pessoas criativas que querem uma nova profissão</li>
+          </ul>
+        </div>
+        <div class="col-cta reveal d2">
+          <div class="results-box">
+            <p class="eyebrow">Ao final do curso você será capaz de:</p>
+            <div class="result-item"><div class="result-icon" style="background:var(--pink)">✦</div><p>Criar artes com confiança</p></div>
+            <div class="result-item"><div class="result-icon" style="background:var(--yellow)">✦</div><p>Entender o que faz um design funcionar</p></div>
+            <div class="result-item"><div class="result-icon" style="background:var(--cyan)">✦</div><p>Montar um portfólio inicial</p></div>
+            <div class="result-item"><div class="result-icon" style="background:var(--orange)">✦</div><p>Dar os primeiros passos no mercado</p></div>
+            <a href="https://forms.gle/ficpiZRezBxrX1xs6" class="btn-primary w-full mt" target="_blank">Quero me inscrever →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-design-start -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: PROGRAMAÇÃO (#programacao)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-programacao">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--cyan);--c2:var(--purple)"></div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Curso</p>
+        <h1 class="ph-title anim-up d2">Progra<em>mação</em></h1>
+        <p class="ph-sub anim-up d3">Cronograma estruturado com material completo por aula, avaliações e certificado de conclusão.</p>
+        <a href="https://wa.me/244931074115" class="btn-primary anim-up d4" target="_blank">
+          Entrar em contacto →
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="prog-grid">
+
+          <div class="prog-card reveal">
+            <div class="prog-icon" style="background:var(--yellow)">▶</div>
+            <h3 class="prog-title">Material por Aula</h3>
+            <ul class="check-list">
+              <li>Vídeo (Drive ou YouTube)</li>
+              <li>PDF resumo</li>
+              <li>Exercício prático (quando aplicável)</li>
+            </ul>
+          </div>
+
+          <div class="prog-card reveal d1">
+            <div class="prog-icon" style="background:var(--pink)">◈</div>
+            <h3 class="prog-title">Avaliação</h3>
+            <ul class="check-list">
+              <li>Questionários simples</li>
+              <li>Entrega de exercícios</li>
+              <li>Feedback nos comentários</li>
+            </ul>
+          </div>
+
+          <div class="prog-card reveal d2">
+            <div class="prog-icon" style="background:var(--cyan);color:var(--black)">✦</div>
+            <h3 class="prog-title">Certificado</h3>
+            <ul class="check-list">
+              <li>PDF de certificado</li>
+              <li>Formulário para nome completo</li>
+              <li>Link para download</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="prog-cta reveal">
+          <p class="body-text">Tem interesse no curso de Programação? Entre em contacto para mais informações sobre datas, preços e inscrições.</p>
+          <a href="https://wa.me/244931074115" class="btn-primary" target="_blank">Falar pelo WhatsApp →</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-programacao -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: PORTFÓLIO (#portfolio)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-portfolio">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--orange);--c2:var(--pink)"></div>
+      <!-- collage BG -->
+      <div class="collage-bg">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDhHlT5X3ETfG9jsxtqJc_MmwNAyu6W4OR9NjCaO8n-UDHhCGlvugBRg19bvLuwrJNvzXD3-AzM1yejnK03nMVOPLucD-aT5ukCt2OrY_KmrB2gVtR2rreX62V0ZaVzZhC8eQJ2sCk9_8A5aWwjbsKSSFeCou7oQfPU1YBtj04xuG0lzKJ7raDhY3UdvJCCIm--P973u0rJdsY8zUjM6GCWwPRHxug_rmxeSHw=w800" alt="" loading="lazy" />
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCHG5PmTWX5PwBibHIL1-EdYJLkGczBe0fwpzKSzwVg1VB__kULUWukAjcdPVa1m3doJgfnN0Qv_WuAu7bKFWG8FQ_jtgftMnjnFbNHpj-FEMwL7i8Qij3e2VM_QfMsmK5E_PxFifSWdXf5-e8OevKDGeDWb2h9dm6dNydM5O-vXLpNPmNeIkdMrPuFm_-wTP6syTOLcZtji_W-NhF0B1CSudA0l7dJNHz_bgU=w800" alt="" loading="lazy" />
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBb2Ta5ycLhtiRrabvMnTLa3VakgzFpa3X_38zYo19LcYpcGYUYETexypDAz8rPkFnEztyq8AUufkOKP5qP8oiyjV351zoFbQhvPWmDfvOE56yeVV0Czsjo0rI47riDO6QWHEGuYmF5J0YO1fKF1PGJWD_QyFX0Gz76KGqf5DIZW4s1uF35TRd8oboJHahkPHj7R5acDDL_aYPy0Y2pEhGcUE_NDtrIzcqGIUc=w800" alt="" loading="lazy" />
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBroThL9T8BQR7Kf86z0mYhgbxrOKbw_UVnjkMucW_yp4Z6zURkdJpNDZGg698WM71NrDjF7T_z6sEghSSenNCfgRjTaVP6kihOW51tYgVYt-qDaBNtihujX4XAB9oiNTi7Sde_zMf23hAxzXocXw1ZeV6cgkamrtPFSQDeqX62PobjqHsErUEEKo9qxvDM4fwmEHijgS_Gxo0VYncPLYGibM-aslLNy7tjejs=w800" alt="" loading="lazy" />
+      </div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Trabalhos selecionados</p>
+        <h1 class="ph-title anim-up d2">Portfólio & <em>Experiências</em></h1>
+        <p class="ph-sub anim-up d3">Design gráfico que transforma ideias em identidades visuais memoráveis.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="filters reveal">
+          <button class="fbtn active" data-f="all">Todos</button>
+          <button class="fbtn" data-f="branding">Branding</button>
+          <button class="fbtn" data-f="design">Design Gráfico</button>
+          <button class="fbtn" data-f="social">Social Media</button>
+          <button class="fbtn" data-f="editorial">Editorial</button>
+        </div>
+
+        <!-- Masonry grid -->
+        <div class="masonry" id="portfolio-grid">
+
+          <div class="pitem reveal" data-cat="branding">
+            <img src="images/projeto1.jpg" alt="design de identidade visual" loading="lazy">
+            <div class="pitem-over"><p class="pcat">Branding</p><p class="pname">Identidade Visual</p></div>
+          </div>
+
+          <div class="pitem reveal d1" data-cat="design">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCHG5PmTWX5PwBibHIL1-EdYJLkGczBe0fwpzKSzwVg1VB__kULUWukAjcdPVa1m3doJgfnN0Qv_WuAu7bKFWG8FQ_jtgftMnjnFbNHpj-FEMwL7i8Qij3e2VM_QfMsmK5E_PxFifSWdXf5-e8OevKDGeDWb2h9dm6dNydM5O-vXLpNPmNeIkdMrPuFm_-wTP6syTOLcZtji_W-NhF0B1CSudA0l7dJNHz_bgU=w800" alt="Projeto Design 2" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Peça Publicitária</p></div>
+          </div>
+
+          <div class="pitem reveal d2" data-cat="social">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBb2Ta5ycLhtiRrabvMnTLa3VakgzFpa3X_38zYo19LcYpcGYUYETexypDAz8rPkFnEztyq8AUufkOKP5qP8oiyjV351zoFbQhvPWmDfvOE56yeVV0Czsjo0rI47riDO6QWHEGuYmF5J0YO1fKF1PGJWD_QyFX0Gz76KGqf5DIZW4s1uF35TRd8oboJHahkPHj7R5acDDL_aYPy0Y2pEhGcUE_NDtrIzcqGIUc=w800" alt="Projeto Social 3" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Social Media</p><p class="pname">Post & Stories</p></div>
+          </div>
+
+          <div class="pitem reveal" data-cat="editorial">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUB4t-VCuzGBzAQv51ZKNCrppUw1S7zzRz1w5CjsAQKcafz-gB-P89s3l2dSuMHdQu0mq0FUtn7hmDjhe8Km6RWxE78CIOck6ZXOOQ7ZimLPFWt4UBCewwPwjnrfDrju8w0d8JrajP1VqEVSB3kX8UmCHQ3-MhTvCXUjpmYxvBnv6Vvxs6cE2AWzHo7udEpDBW-czo6ebtvTmImRJQ=w800" alt="Projeto Editorial 4" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Editorial</p><p class="pname">Layout & Diagramação</p></div>
+          </div>
+
+          <div class="pitem reveal d1" data-cat="branding">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBroThL9T8BQR7Kf86z0mYhgbxrOKbw_UVnjkMucW_yp4Z6zURkdJpNDZGg698WM71NrDjF7T_z6sEghSSenNCfgRjTaVP6kihOW51tYgVYt-qDaBNtihujX4XAB9oiNTi7Sde_zMf23hAxzXocXw1ZeV6cgkamrtPFSQDeqX62PobjqHsErUEEKo9qxvDM4fwmEHijgS_Gxo0VYncPLYGibM-aslLNy7tjejs=w800" alt="Projeto Branding 5" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Branding</p><p class="pname">Logotipo & Marca</p></div>
+          </div>
+
+          <div class="pitem reveal d2" data-cat="social">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCOQqCK8S6I6NONRFrwNUSRc8nl33M4fFwgQqa7dAZ7kGNLXggDvVdDuJoEYwreON_tavjwDwNFtXnxmbCY73nXYegL95Xprd9m7pUajC2hRe4qTkY93zmDj6M2O-nTmxMjG4JB3VWzqKqj9qO2WVoxyysHvyfsFbmIJmg0LSxhly3ItWZGhBxQMn0=w800" alt="Projeto Social 6" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Social Media</p><p class="pname">Feed Design</p></div>
+          </div>
+
+          <div class="pitem reveal" data-cat="design">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCnXGxWrfkP83QrSOkIjFiui9xT_FAdPBZL1zncoDwiqPeVSbroJvbr5rqnpgZHYEqskkjh-qczAhhE8RHB5Eg-q5yetVsAM7JSks5rpdMLdX5BRdYz4a3tq0Fzf92Yf20C7NpO4OSET8KPIjZhmUZtJN5MDhDyqUcUNftuYMy_a63YnbUgqJvD=w800" alt="Projeto Design 7" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Material Criativo</p></div>
+          </div>
+
+          <div class="pitem reveal d1" data-cat="branding">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAvlGl3M0horNNBTnG9vyA3SOcM5n-YUZQdrrvrJ6AbSB8-e9REuyIt4MNpjac97XDXPRFkZGBr7dSLOG4iaN5ZHew9WM-ZG8cGsX_O3AWLboZ3DNuONfkPDbSbbSd0aGwbZ9ihNwkXrbo1QGG_ce2OzgxmZJ8Vj2Mj4ZFOGvS662Wh4tkrA7EJLKcl5kk6QFhvM2BYEogQd_P1oEgNluusL-7iYompoeptilNc=w800" alt="Projeto Branding 8" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Branding</p><p class="pname">Sistema de Marca</p></div>
+          </div>
+
+          <div class="pitem reveal d2" data-cat="design">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDNSzFwuHumxlrp10fXuVcE3VqcCAIEhRTHsDVBJV2tFPTMV1OpwclFA5xiFx98eEkqMqdeTATYSuUQ94Im4gt_cbooknuvd333dCjJmG0J3C2qEtKWf-eJEhLD_-QffY33fDiJL1c8ujXxkVYoKjo7WRAYIe-gxFhCcJZB0nejum0j_Ci_ydvYDQY-6uZEV0g6tmpI30HmLc-WrRulILyECq7kYIuAVF7S=w800" alt="Projeto Design 9" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Campanha Visual</p></div>
+          </div>
+
+          <div class="pitem reveal" data-cat="social">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBxmrBSNZYXrrhZYwmyRopxqCQ7Ri6xCN87q-wJOgdKOjks8Kn7oBQG0axbP1TShZWE9UK0G-zhXgN45skp2JWTC7YDIUqmK8wmcW0hFryy8umjw6HpIlRFKaIE6x_YsnpN09Eito9PzuiyBhkVvdbtBmqbXHTQgTLbz7dqvTqWxOtM66YoP5J87tBjmbJXA3ScFXftyfghBEg-dFV8d__u9xKYe5Tmgmtyau8=w800" alt="Projeto Social 10" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Social Media</p><p class="pname">Campanha Digital</p></div>
+          </div>
+
+          <div class="pitem reveal d1" data-cat="editorial">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDqXR8kfKdEO2yR2VVDvzLBaLOZstCpxztuiCCDAsEoVKJL-DhfEFnKH38VqDUybqAw1goNIKbzYCiA_FRIFDfxhJAhIm9dPnNJ_B8JvPvIDoj4xBAO8lPdC-WyJyr5ZXsc2-e-qU5fpgJBVcw-2sx3kvUZBx_q0J6DNI_oEdWoGl5jtdeidWqBtxz6726wjCB4ELFwG-nF7zfmQ-caKjfuCVcOQWNkvIHgYTA=w800" alt="Projeto Editorial 11" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Editorial</p><p class="pname">Capa & Publicação</p></div>
+          </div>
+
+          <div class="pitem reveal d2" data-cat="design">
+            <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUB9jV7QtDli5XKNYYk0NbxkMbOH8ojgItth56hLwFrWeVCilJl5a2D0W4Twa0RpH6UQCmFXK19rvj6TmBw4HC4ej4mbvZUm2eksnaUmC8NqSz-EvQI_q3dqTjzdp62plX08TouzLzoi6mJ2K_T0S86y4RYGPTFQLsctwlhkc0oss6SU50a-l6_h7z8EXlsJciM87XzfcRFhUImubO-fBmqBWG45ytahANxz=w800" alt="Projeto Design 12" loading="lazy" />
+            <div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Projeto Completo</p></div>
+          </div>
+
+        </div><!-- /masonry -->
+
+        <!-- Workshop highlight -->
+        <div class="workshop-card reveal">
+          <div class="wk-text">
+            <p class="eyebrow">Evento em destaque</p>
+            <h2 class="wk-title">Workshop — Criatividade em Foco</h2>
+            <p class="wk-desc">Um workshop intensivo para dominar o design gráfico na prática. Do conceito à entrega final, com teoria, ferramentas e projetos reais.</p>
+          </div>
+          <a href="https://wa.me/244931074115" class="btn-dark" target="_blank">Quero participar →</a>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /page-portfolio -->
+
+
+  <!-- ══════════════════════════════════════════════════
+       PAGE: RICARTES CREATIVE (#creative)
+  ══════════════════════════════════════════════════ -->
+  <div class="page" id="page-creative">
+
+    <section class="page-hero">
+      <div class="ph-bg" style="--c1:var(--purple);--c2:var(--cyan)"></div>
+      <div class="container ph-inner">
+        <p class="eyebrow anim-up">Agência Criativa</p>
+        <h1 class="ph-title anim-up d2">Ricartes <em>Creative</em></h1>
+        <p class="ph-sub anim-up d3">Criatividade que transforma marcas em experiências memoráveis.</p>
+        <a href="https://wa.me/244931074115" class="btn-primary anim-up d4" target="_blank">Solicitar proposta →</a>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="col-text reveal">
+          <p class="eyebrow">Sobre nós</p>
+          <h2 class="section-title">Design orientado para <em>resultados</em></h2>
+          <p class="body-text">A Ricartes Creative é uma agência criativa especializada em design, comunicação e produção de conteúdo. Trabalhamos lado a lado com marcas que desejam crescer, modernizar a sua imagem e comunicar com clareza.</p>
+          <p class="body-text">Mais do que criar peças bonitas, desenvolvemos soluções que fortalecem o posicionamento da sua marca e criam experiências relevantes para o seu público.</p>
+        </div>
+        <div class="col-cta reveal d2">
+          <div class="values-box">
+            <p class="eyebrow">O que nos define</p>
+            <ul class="check-list">
+              <li>Pensamento estratégico</li>
+              <li>Design orientado para resultados</li>
+              <li>Elevado padrão estético</li>
+              <li>Atenção aos detalhes</li>
+              <li>Compromisso com a excelência</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">O que fazemos</p>
+          <h2 class="section-title">Serviços <em>Criativos</em></h2>
+        </div>
+        <div class="services-grid">
+
+          <div class="srv-card reveal">
+            <div class="srv-num" style="color:var(--yellow)">01</div>
+            <h3 class="srv-title">Design Gráfico</h3>
+            <p class="srv-desc">Identidades visuais fortes e materiais que comunicam profissionalismo e credibilidade.</p>
+            <ul class="srv-list">
+              <li>Identidade visual e logotipos</li>
+              <li>Branding completo</li>
+              <li>Materiais institucionais</li>
+              <li>Flyers, brochuras, catálogos</li>
+              <li>Packaging e design editorial</li>
+            </ul>
+          </div>
+
+          <div class="srv-card reveal d1">
+            <div class="srv-num" style="color:var(--pink)">02</div>
+            <h3 class="srv-title">Social Media & Conteúdo</h3>
+            <p class="srv-desc">Redes sociais como canais estratégicos de comunicação e crescimento de marca.</p>
+            <ul class="srv-list">
+              <li>Planeamento de conteúdo</li>
+              <li>Design para redes sociais</li>
+              <li>Reels e conteúdos animados</li>
+              <li>Copywriting estratégico</li>
+              <li>Gestão de presença digital</li>
+            </ul>
+          </div>
+
+          <div class="srv-card reveal d2">
+            <div class="srv-num" style="color:var(--cyan)">03</div>
+            <h3 class="srv-title">Produção Criativa</h3>
+            <p class="srv-desc">Conteúdos visuais modernos e envolventes que dão vida às suas ideias.</p>
+            <ul class="srv-list">
+              <li>Motion design</li>
+              <li>Vídeos promocionais</li>
+              <li>Spots publicitários</li>
+              <li>Cobertura de eventos</li>
+              <li>Conteúdo para campanhas</li>
+            </ul>
+          </div>
+
+          <div class="srv-card reveal d1">
+            <div class="srv-num" style="color:var(--orange)">04</div>
+            <h3 class="srv-title">Estratégia de Marca</h3>
+            <p class="srv-desc">Ajudamos a sua marca a crescer com direção, consistência e propósito.</p>
+            <ul class="srv-list">
+              <li>Posicionamento de marca</li>
+              <li>Consultoria criativa</li>
+              <li>Estratégias de comunicação</li>
+              <li>Lançamento de marcas</li>
+              <li>Rebranding</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio Creative -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Cases</p>
+          <h2 class="section-title">Trabalhos que <em>transformam</em></h2>
+        </div>
+        <div class="masonry">
+          <div class="pitem reveal"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBMo4Mf46W59fqjl5h_mCDFoma-iJReDXWtfRXuHVPxFd4BfaN00ZanbyoCvirQO6jpnlGO7UiS1g9Mgs7kRqthL8rpyHwAaGcHLHhVsKh_qFB7yijZ2d-onc9MF7eY4TCggfAQmCr1n978W9fCNY5CV6CPrcrP_BStRoBjKjItQufL2Uf0uv03VhXHEl9wwRLLOpAAHwUgdcQJ74b4gVuNnundgTlJKIK7=w800" alt="Creative 1" loading="lazy" /><div class="pitem-over"><p class="pcat">Ricartes Creative</p><p class="pname">Identidade de Marca</p></div></div>
+          <div class="pitem reveal d1"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCmIwKDteO2VStRqfdGwD_IS-17BmtiraTaTWPFw8ou_CbBrHvncQPWQ5hiPRzg1cHzvnuEZBx5B7jG24rtRYcAeutjx_GpVfegnEIl0rC16AK0ssp4ebwMpN8H7qiEf0aRWxfJtO8dh7BkN7nghShG0rSz3qwKJVjWemfgEVR61Nf64wja9pz0KMhp7n4apAsoz7yykndFmNphbCS6yVZwXLAqLacaAecnSFw=w800" alt="Creative 2" loading="lazy" /><div class="pitem-over"><p class="pcat">Social Media</p><p class="pname">Campanha de Marca</p></div></div>
+          <div class="pitem reveal d2"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAXCViJZsZ27YNmp36gjJt_0DeYfnznpXq3HFnCuIzIqPPbZN6ak0gObQcbRuAnTq82aYf3WvPmPWp5kYToucTLRI0xcGBS8YynG-nlJhijhfVDBvhfFT37gyML1OTxFTmvYn2Op4A6UlKyeQZVlzRrDMv6sT_dyqn7nXcZFDZov2oaR4EHcAdAWghs6OZFITyqMuX5hKhuiKnneY3KHqI1YWk7elJmdgCaZBY=w800" alt="Creative 3" loading="lazy" /><div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Materiais Institucionais</p></div></div>
+          <div class="pitem reveal"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAQFmBidyhOzgJIfyEhbY7vmbSs9zWKe5clOc_g7bfYV7hw9ZcxpDPcIaAcTyqwxUA3g2LmtVjKLFWWIetI7BlCxCdLTMuepexwxSnFd_SI3z_F71WoHsha3LME5hswAUoi9qE_q8EKrT0jEqLYwdmSmJrH9qHpw6ayz0iHL3nC28yGuemKSnmoHi0=w800" alt="Creative 4" loading="lazy" /><div class="pitem-over"><p class="pcat">Produção Criativa</p><p class="pname">Motion & Vídeo</p></div></div>
+          <div class="pitem reveal d1"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBkQvXqw3yn4fcug9lZPzlt_tOgKeVfB826prHWZGMKVw89iCM7w7CS6tb8tpwBnUaEdYM56GnbokKHYOoMdKjXeZEz7ZH_6aBxsYUwvhDS4oKCalk60dNznlFrjZE_Z6aOsyTqDEHGKpLl-PCIdc73m4esy92yI8MSfnLV7I4x6Imu4ifMoFKNYrU=w800" alt="Creative 5" loading="lazy" /><div class="pitem-over"><p class="pcat">Branding</p><p class="pname">Sistema Visual</p></div></div>
+          <div class="pitem reveal d2"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUC42-azGmMqLm2n_VmVl7rGjn__IWqlqVGCfWuXrUeO3sB5I6uTp3mXosMQa6-jYGFg_BCJGb4dI7JTEchQOXhshbutgccwotOKripTOz7aULm3HLCRNw6eX0_sy4N1pIz8bqD-eBRz9x3WJPn80rNFtUtQwe5ToP13V9HFYDcLNRj136Zitw49xBfr1-GMZ4wrlv3Id9pIHvWa3NwC_LdZXhsF0uoCke4j=w800" alt="Creative 6" loading="lazy" /><div class="pitem-over"><p class="pcat">Design Gráfico</p><p class="pname">Peça Criativa</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Porquê escolher -->
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Porquê nós</p>
+          <h2 class="section-title">Não criamos apenas design — criamos <em>valor</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal"><div class="why-icon" style="background:var(--yellow)">◈</div><p>Abordagem personalizada para cada cliente</p></div>
+          <div class="why-item reveal d1"><div class="why-icon" style="background:var(--pink)">◲</div><p>Soluções criativas e estratégicas</p></div>
+          <div class="why-item reveal d2"><div class="why-icon" style="background:var(--cyan)">◎</div><p>Comunicação clara e profissional</p></div>
+          <div class="why-item reveal d3"><div class="why-icon" style="background:var(--orange)">▣</div><p>Cumprimento rigoroso de prazos</p></div>
+          <div class="why-item reveal"><div class="why-icon" style="background:var(--purple)">✦</div><p>Foco em resultados mensuráveis</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Creative -->
+    <section class="section">
+      <div class="container">
+        <div class="big-cta reveal">
+          <h2 class="big-cta-title">Vamos criar algo <em>extraordinário?</em></h2>
+          <p class="big-cta-sub">Se procura uma equipa criativa capaz de elevar a sua marca, estamos prontos.</p>
+          <div class="big-cta-actions">
+            <a href="https://wa.me/244931074115" class="btn-primary" target="_blank">Solicitar proposta →</a>
+            <a href="mailto:ricardoricartes22@gmail.com" class="btn-ghost">Enviar email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-creative -->
+
+
+  <!-- ══ FOOTER (global) ════════════════════════════ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-brand" data-page="home">Ricartes<span>.</span>Digital</a>
+        <p class="footer-tagline">Ecossistema criativo para acelerar a sua jornada.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <p class="fl-head">Mentorias</p>
+          <a href="#zero-digital" data-page="zero-digital">Do Zero ao Digital</a>
+          <a href="#design-start" data-page="design-start">Design Start</a>
+          <a href="#programacao" data-page="programacao">Programação</a>
+        </div>
+        <div class="fl-col">
+          <p class="fl-head">Empresa</p>
+          <a href="#home" data-page="home">Comece Aqui</a>
+          <a href="#portfolio" data-page="portfolio">Portfólio</a>
+          <a href="#creative" data-page="creative">Ricartes Creative</a>
+        </div>
+        <div class="fl-col">
+          <p class="fl-head">Contacto</p>
+          <a href="tel:+244931074115">+244 931 074 115</a>
+          <a href="mailto:ricardoricartes22@gmail.com">ricardoricartes22@gmail.com</a>
+          <a href="https://wa.me/244931074115" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Ricartes Digital. Angola. Todos os direitos reservados.</p>
+        <p>Feito com criatividade ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
