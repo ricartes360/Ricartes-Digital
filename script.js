@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'mentorias':    'page-mentorias',
     'zero-digital': 'page-zero-digital',
     'design-start': 'page-design-start',
-    'programacao':  'page-programacao',
+    'metodo-v.e.r':  'page-metodo-v.e.r',
     'portfolio':    'page-portfolio',
     'creative':     'page-creative',
     'sobre':        'page-sobre',
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lp === pageKey ||
         (pageKey === 'zero-digital' && lp === 'mentorias') ||
         (pageKey === 'design-start' && lp === 'mentorias') ||
-        (pageKey === 'programacao'  && lp === 'mentorias')
+        (pageKey === 'metodo-v.e.r'  && lp === 'mentorias')
       );
     });
   }
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `*Área de Interesse:* ${area}\n` +
         `*Objectivo:* ${objetivo}`;
 
-      window.open('https://wa.me/244931074115?text=' + encodeURIComponent(msg), '_blank');
+      window.open('https://wa.me/244929395774?text=' + encodeURIComponent(msg), '_blank');
     });
   }
 
