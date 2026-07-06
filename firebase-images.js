@@ -81,3 +81,33 @@ export async function loadCreativeImages() {
   masonry.innerHTML = '';
   imgs.forEach(img => masonry.appendChild(buildItem(img)));
 }
+
+/* ── Instagram ── */
+const IG_PROFILE = 'https://www.instagram.com/ricardo_ricartes';
+const IG_SVG = `<svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <rect x="2" y="2" width="20" height="20" rx="5"/>
+  <circle cx="12" cy="12" r="4.2"/>
+  <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/>
+</svg>`;
+
+export async function loadInstagramImages() {
+  const grid    = document.getElementById('ig-grid');
+  const section = document.getElementById('ig-section');
+  if (!grid || !section) return;
+  const imgs = await fetchImages('instagram');
+  if (!imgs.length) return;               /* sem posts → secção fica oculta */
+  grid.innerHTML = '';
+  imgs
+    .sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''))
+    .slice(0, 8)                          /* máximo 8 posts */
+    .forEach(img => {
+      const a = document.createElement('a');
+      a.className = 'ig-item reveal in';
+      a.href      = img.link || IG_PROFILE;
+      a.target    = '_blank';
+      a.rel       = 'noopener';
+      a.innerHTML = `<img src="${img.url}" alt="${img.alt || 'Post do Instagram'}" loading="lazy" />${IG_SVG}`;
+      grid.appendChild(a);
+    });
+  section.style.display = '';
+}

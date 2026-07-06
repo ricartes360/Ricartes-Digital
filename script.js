@@ -2,9 +2,19 @@
    RICARTES DIGITAL — script.js  (type="module")
    ═══════════════════════════════════════════════════ */
 
-import { loadPortfolioImages, loadCreativeImages } from './firebase-images.js';
+import { loadPortfolioImages, loadCreativeImages, loadInstagramImages } from './firebase-images.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* ── 0. PRELOADER ──────────────────────────────── */
+  const preloader = document.getElementById('preloader');
+  setTimeout(() => {
+    if (preloader) {
+      preloader.classList.add('done');
+      setTimeout(() => preloader.remove(), 650);
+    }
+    document.body.classList.add('loaded');
+  }, 1000);
 
   /* ── 1. CUSTOM CURSOR ──────────────────────────── */
   const cur     = document.getElementById('cur');
@@ -35,9 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const PAGES = {
     'home':         'page-home',
     'mentorias':    'page-mentorias',
-    'zero-digital': 'page-zero-digital',
-    'design-start': 'page-design-start',
-    'metodo-v.e.r':  'page-metodo-v.e.r',
+    'programacao':  'page-programacao',
     'portfolio':    'page-portfolio',
     'creative':     'page-creative',
     'sobre':        'page-sobre',
@@ -135,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNavActive(pageKey);
     triggerReveal(target);
 
-    if (pageKey === 'home' || pageKey === 'sobre') triggerCounters(target);
+    if (pageKey === 'home' || pageKey === 'sobre' || pageKey === 'creative') triggerCounters(target);
 
     if (pageKey === 'portfolio') {
       loadPortfolioImages().then(() => triggerReveal(target));
@@ -150,9 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const lp = link.dataset.page;
       link.classList.toggle('active',
         lp === pageKey ||
-        (pageKey === 'zero-digital' && lp === 'mentorias') ||
-        (pageKey === 'design-start' && lp === 'mentorias') ||
-        (pageKey === 'metodo-v.e.r'  && lp === 'mentorias')
+        (pageKey === 'programacao' && lp === 'mentorias')
       );
     });
   }
@@ -267,7 +273,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── 11. CONSOLE WATERMARK ─────────────────────── */
+  /* ── 11. SPOTLIGHT NOS CARTÕES ─────────────────── */
+  document.querySelectorAll('.feature-card, .mcard:not(.mcard-soon), .srv-card, .prog-card')
+    .forEach(card => {
+      const spot = document.createElement('span');
+      spot.className = 'card-spot';
+      card.appendChild(spot);
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--sx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--sy', (e.clientY - r.top) + 'px');
+      });
+    });
+
+  /* ── 12. INSTAGRAM FEED ────────────────────────── */
+  loadInstagramImages();
+
+  /* ── 13. CONSOLE WATERMARK ─────────────────────── */
   console.log('%c✦ Ricartes Digital',
     'font-size:18px;font-weight:800;color:#F5D000;background:#080808;padding:8px 16px;border-radius:4px;');
   console.log('%cEcossistema criativo · Angola',

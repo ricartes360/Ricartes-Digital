@@ -31,6 +31,12 @@
 </head>
 <body>
 
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pre-logo">R<span>.</span></div>
+    <div class="pre-bar"><div class="pre-bar-fill"></div></div>
+  </div>
+
   <div id="cur"></div>
   <div id="cur-ring"></div>
 
@@ -46,9 +52,7 @@
         <li class="nav-has-sub">
           <a href="#mentorias" class="nav-link" data-page="mentorias">Mentorias <span class="nav-chevron">▾</span></a>
           <ul class="nav-sub">
-            <li><a href="#metodo-v.e.r" class="nav-link nav-sub-link" data-page="programação">Método V.E.R</a></li>
-            <li><a href="#zero-digital" class="nav-link nav-sub-link" data-page="zero-digital">Do Zero ao Digital</a></li>
-            <li><a href="#design-start" class="nav-link nav-sub-link" data-page="design-start">Design Start</a></li>
+            <li><a href="#programacao" class="nav-link nav-sub-link" data-page="programacao">Método V.E.R</a></li>
           </ul>
         </li>
         <li><a href="#portfolio" class="nav-link" data-page="portfolio">Portfólio</a></li>
@@ -63,12 +67,19 @@
   <div class="page active" id="page-home">
 
     <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="video-inicio.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-video-overlay"></div>
       <div class="hero-noise"></div>
       <div class="hero-inner">
         <p class="hero-tag anim-up d1">Bem-vindo à Ricartes Digital</p>
-        <h1 class="hero-title anim-up d2">
-          Acelere a sua<br>
-          jornada <span class="hero-accent">criativa</span>
+        <h1 class="hero-title">
+          <span class="hw" style="--wd:.05s">Acelere</span>
+          <span class="hw" style="--wd:.16s">a</span>
+          <span class="hw" style="--wd:.27s">sua</span><br>
+          <span class="hw" style="--wd:.38s">jornada</span>
+          <span class="hw hero-accent" style="--wd:.52s">criativa</span>
         </h1>
         <p class="hero-sub anim-up d3">
           Mentorias, cursos e soluções de design estratégico para quem quer crescer
@@ -112,11 +123,11 @@
             <p class="fc-desc">Clareza, posicionamento e mentalidade para quem quer construir uma presença digital forte e duradoura.</p>
             <a href="#mentorias" class="fc-link" data-page="mentorias">Conhecer →</a>
           </div>
-          <div class="feature-card reveal d2" data-page="design-start">
+          <div class="feature-card reveal d2" data-page="programacao">
             <div class="fc-number">02</div>
-            <h3 class="fc-title">Cursos Práticos</h3>
-            <p class="fc-desc">Aprenda fundamentos, domine ferramentas e desenvolva projetos reais que preparam para o mercado.</p>
-            <a href="#design-start" class="fc-link" data-page="design-start">Conhecer →</a>
+            <h3 class="fc-title">Método V.E.R</h3>
+            <p class="fc-desc">Visão, Execução e Resultados. A mentoria prática que transforma ideias em projetos reais.</p>
+            <a href="#programacao" class="fc-link" data-page="programacao">Conhecer →</a>
           </div>
           <div class="feature-card reveal d3" data-page="portfolio">
             <div class="fc-number">03</div>
@@ -174,6 +185,20 @@
       </div>
     </section>
 
+    <!-- INSTAGRAM -->
+    <section class="section ig-section" id="ig-section" style="display:none">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Instagram</p>
+          <h2 class="section-title">Segue o dia-a-dia <em>@ricardo_ricartes</em></h2>
+        </div>
+        <div class="ig-grid" id="ig-grid"></div>
+        <div style="text-align:center;margin-top:2.5rem">
+          <a href="https://www.instagram.com/ricardo_ricartes" class="btn-primary" target="_blank" rel="noopener">Seguir no Instagram →</a>
+        </div>
+      </div>
+    </section>
+
   </div><!-- /page-home -->
 
 
@@ -191,27 +216,29 @@
     <section class="section">
       <div class="container">
         <div class="mentoria-cards">
-          <div class="mcard reveal">
-            <div class="mcard-bar" style="background:#E63946"></div>
+          <div class="mcard mcard-featured reveal">
+            <div class="mcard-bar" style="background:linear-gradient(90deg,#FFD556,#E63946)"></div>
             <div class="mcard-body">
-              <p class="mcard-tag">Mentoria</p>
+              <p class="mcard-badge-open">● Turmas Abertas</p>
+              <p class="mcard-tag">Mentoria Exclusiva</p>
               <h2 class="mcard-title">Método V.E.R</h2>
               <p class="mcard-desc">Visão, Execução e Resultados. Uma mentoria prática para criativos, empreendedores e freelancers transformarem ideias em projetos reais.</p>
               <ul class="item-list">
                 <li>Visão criativa e posicionamento</li>
                 <li>Processos e ferramentas de execução</li>
                 <li>Portfólio, clientes e presença digital</li>
-                <li>Grupo VIP + certificado</li>
+                <li>Comunidade + certificado</li>
               </ul>
               <div class="mcard-actions">
-                <a href="#metodo-v.e.r" class="btn-primary" data-page="metodo-v.e.r">Ver detalhes →</a>
+                <a href="#programacao" class="btn-primary" data-page="programacao">Ver detalhes →</a>
                 <a href="https://wa.me/244929395774" class="btn-ghost" target="_blank">Inscrever-me</a>
               </div>
             </div>
           </div>
-          <div class="mcard reveal d1">
+          <div class="mcard mcard-soon reveal d1">
             <div class="mcard-bar" style="background:#FFD556"></div>
             <div class="mcard-body">
+              <p class="mcard-badge-soon">Em Breve</p>
               <p class="mcard-tag">Mentoria</p>
               <h2 class="mcard-title">Do Zero ao Digital</h2>
               <p class="mcard-desc">Clareza, estratégia e ação para quem quer entrar no mundo digital com segurança. Para quem está perdido ou com medo de começar.</p>
@@ -221,15 +248,12 @@
                 <li>Como se posicionar online</li>
                 <li>Mentalidade profissional</li>
               </ul>
-              <div class="mcard-actions">
-                <a href="#zero-digital" class="btn-primary" data-page="zero-digital">Ver detalhes →</a>
-                <a href="https://forms.gle/G52UAN4NPpSq1pLi6" class="btn-ghost" target="_blank">Inscrever-me</a>
-              </div>
             </div>
           </div>
-          <div class="mcard reveal d2">
+          <div class="mcard mcard-soon reveal d2">
             <div class="mcard-bar" style="background:#EAFF00"></div>
             <div class="mcard-body">
+              <p class="mcard-badge-soon">Em Breve</p>
               <p class="mcard-tag">Curso</p>
               <h2 class="mcard-title">Design Start</h2>
               <p class="mcard-desc">Do zero à criação. Aprenda design gráfico de forma simples, prática e aplicada. Sem precisar saber nada antes de começar.</p>
@@ -239,10 +263,6 @@
                 <li>Identidade visual na prática</li>
                 <li>Portfólio + certificado</li>
               </ul>
-              <div class="mcard-actions">
-                <a href="#design-start" class="btn-primary" data-page="design-start">Ver detalhes →</a>
-                <a href="https://forms.gle/ficpiZRezBxrX1xs6" class="btn-ghost" target="_blank">Inscrever-me</a>
-              </div>
             </div>
           </div>
         </div>
@@ -409,7 +429,7 @@
 
   <!-- ══ PROGRAMAÇÃO ════════════════════════════════ -->
   <!-- ══ MÉTODO V.E.R ════════════════════════════════ -->
-  <div class="page" id="page-metodo-v.e.r">
+  <div class="page" id="page-programacao">
     <section class="page-hero ver-hero" style="background-image:url('capa,metodo,v.e.r.jpeg')">
       <div class="ver-hero-overlay"></div>
       <div class="ph-noise"></div>
@@ -453,6 +473,22 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEO DO MÉTODO -->
+    <section class="section ver-video-section">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center">
+          <p class="eyebrow">Vê com os teus olhos</p>
+          <h2 class="section-title">O Método V.E.R em <em>acção</em></h2>
+        </div>
+        <div class="ver-video-frame reveal d1">
+          <video controls preload="metadata" poster="capa,metodo,v.e.r.jpeg">
+            <source src="metodo-v.e.r.mp4" type="video/mp4" />
+            O teu browser não suporta vídeo.
+          </video>
         </div>
       </div>
     </section>
@@ -625,7 +661,7 @@
             <li id="ver-vip-li4">Networking criativo</li>
             <li id="ver-vip-li5">Acesso antecipado às mentorias</li>
           </ul>
-          <a href="https://wa.me/244931074115?text=Ol%C3%A1%21+Quero+entrar+no+*Grupo+VIP*+do+M%C3%A9todo+V.E.R+e+fazer+parte+da+comunidade.+%F0%9F%94%A5" class="btn-primary" target="_blank" style="margin-top:1rem">Entrar no Grupo VIP →</a>
+          <a href="https://wa.me/244929395774?text=Ol%C3%A1%21+Quero+entrar+na+*Comunidade*+do+M%C3%A9todo+V.E.R.+%F0%9F%94%A5" class="btn-primary" target="_blank" style="margin-top:1rem">Entrar na Comunidade →</a>
         </div>
       </div>
     </section>
@@ -689,7 +725,7 @@
           <p class="body-text">As turmas possuem número reduzido de participantes para garantir melhor acompanhamento e resultados. Garanta já a sua vaga.</p>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem">
             <a href="#inscricao-ver" class="btn-primary" data-page="programacao">Garantir minha vaga →</a>
-            <a href="https://wa.me/244929395774" class="btn-ghost" target="_blank">Entrar no Grupo VIP</a>
+            <a href="https://wa.me/244929395774" class="btn-ghost" target="_blank">Entrar na Comunidade</a>
           </div>
         </div>
       </div>
@@ -743,7 +779,7 @@
             <h2 class="wk-title">Workshop — Criatividade em Foco</h2>
             <p class="wk-desc">Um workshop intensivo para dominar o design gráfico na prática. Do conceito à entrega final.</p>
           </div>
-          <a href="https://wa.me/244931074115" class="btn-dark" target="_blank">Quero participar →</a>
+          <a href="https://wa.me/244929395774" class="btn-dark" target="_blank">Quero participar →</a>
         </div>
       </div>
     </section>
@@ -762,6 +798,29 @@
         <a href="https://wa.me/244929395774" class="btn-primary anim-up d4" id="cr-hero-btn-text" target="_blank">Solicitar proposta →</a>
       </div>
     </section>
+
+    <!-- TICKER CREATIVE -->
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="tick">Branding</span>
+        <span class="tick">Identidade Visual</span>
+        <span class="tick">Social Media</span>
+        <span class="tick">Motion Design</span>
+        <span class="tick">Estratégia de Marca</span>
+        <span class="tick">Produção Criativa</span>
+        <span class="tick">Design Editorial</span>
+        <span class="tick">Campanhas</span>
+      </div>
+    </div>
+
+    <!-- BIG STATEMENT -->
+    <section class="cr-statement">
+      <div class="container">
+        <p class="cr-statement-text reveal">Criamos marcas<br>que <span class="cr-grad">ficam.</span></p>
+        <p class="cr-statement-sub reveal d1">Design não é decoração. É estratégia, emoção e memória — tudo ao mesmo tempo.</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container two-col">
         <div class="col-text reveal">
@@ -818,6 +877,48 @@
         </div>
       </div>
     </section>
+    <!-- PROCESSO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Como trabalhamos</p>
+          <h2 class="section-title">Do briefing à <em>entrega</em></h2>
+        </div>
+        <div class="cr-process-grid">
+          <div class="cr-step reveal">
+            <p class="cr-step-num">01</p>
+            <h3 class="cr-step-title">Briefing & Imersão</h3>
+            <p class="cr-step-desc">Ouvimos, questionamos e mergulhamos na tua marca até entender o que a torna única.</p>
+          </div>
+          <div class="cr-step reveal d1">
+            <p class="cr-step-num">02</p>
+            <h3 class="cr-step-title">Estratégia & Conceito</h3>
+            <p class="cr-step-desc">Definimos o posicionamento e o conceito criativo que vai guiar todas as decisões.</p>
+          </div>
+          <div class="cr-step reveal d2">
+            <p class="cr-step-num">03</p>
+            <h3 class="cr-step-title">Design & Produção</h3>
+            <p class="cr-step-desc">Criamos, testamos e refinamos cada peça com rigor estético e atenção ao detalhe.</p>
+          </div>
+          <div class="cr-step reveal d3">
+            <p class="cr-step-num">04</p>
+            <h3 class="cr-step-title">Entrega & Acompanhamento</h3>
+            <p class="cr-step-desc">Entregamos tudo pronto a usar e ficamos por perto para garantir consistência.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS DA AGÊNCIA -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat reveal"><span class="stat-n" data-n="80" data-sfx="+">0</span><span class="stat-l">Projectos criados</span></div>
+        <div class="stat reveal d1"><span class="stat-n" data-n="40" data-sfx="+">0</span><span class="stat-l">Marcas atendidas</span></div>
+        <div class="stat reveal d2"><span class="stat-n" data-n="6" data-sfx=" anos">0</span><span class="stat-l">De experiência</span></div>
+        <div class="stat reveal d3"><span class="stat-n" data-n="100" data-sfx="%">0</span><span class="stat-l">Compromisso</span></div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
@@ -948,7 +1049,7 @@
           <h2 class="big-cta-title">Vamos trabalhar <em>juntos?</em></h2>
           <p class="big-cta-sub">Se tens um projecto, uma ideia ou queres evoluir profissionalmente, estou aqui para ajudar.</p>
           <div class="big-cta-actions">
-            <a href="https://wa.me/244931074115" class="btn-primary" target="_blank">Falar no WhatsApp →</a>
+            <a href="https://wa.me/244929395774" class="btn-primary" target="_blank">Falar no WhatsApp →</a>
             <a href="#portfolio" class="btn-ghost" data-page="portfolio">Ver Portfólio</a>
           </div>
         </div>
@@ -970,9 +1071,7 @@
       <div class="footer-links">
         <div class="fl-col">
           <p class="fl-head">Mentorias</p>
-          <a href="#zero-digital" data-page="zero-digital">Do Zero ao Digital</a>
-          <a href="#design-start" data-page="design-start">Design Start</a>
-          <a href="#metodo-v.e.r" data-page="metodo-v.e.r">Método V.E.R</a>
+          <a href="#programacao" data-page="programacao">Método V.E.R</a>
         </div>
         <div class="fl-col">
           <p class="fl-head">Empresa</p>
@@ -989,7 +1088,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>© 2026 RicartesDigital · Angola · Todos os direitos reservados.</p>
+        <p>© 2026 AlcidesSeven · Angola · Todos os direitos reservados.</p>
         <p>Design com propósito ✦</p>
       </div>
     </div>
